@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704629733622",
+    "project_id": "letterboxd-b345e",
+    "storage_bucket": "letterboxd-b345e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704629733622:android:ba4e4d2e5331a2977c94d7",
+        "android_client_info": {
+          "package_name": "com.company.Letterboxd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704629733622-1mhf6d1idkrnrg5toilels9mch5jf3ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIL-KUP1LvGl-38g5umAqQ__k_iqImMKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704629733622-1mhf6d1idkrnrg5toilels9mch5jf3ho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
