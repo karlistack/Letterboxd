@@ -1,16 +1,14 @@
 
 Uso de Firebase 
+<img src="https://github.com/karlistack/Letterboxd/blob/master/2021-02-28-000821_1366x768_scrot.png" width="50%">
 
-![uso de firebase](https://github.com/karlistack/Letterboxd/blob/master/2021-02-28-000821_1366x768_scrot.png)
 Inicio de la app
 
+<img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235202.png" width="50%">
 
-![Inicio de la app](https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235202.png)
-
-
-![No dejes campos vacios](https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png)
-
-![Comprueba credenciales](https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210228_001205.png)
-
+No dejes campos vacios
 <img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="50%">
-![Entrada a la app](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)
+Comrpueba los credenciales
+<img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210228_001205.png" width="50%">
+No dejes los valores vacios
+<img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="50%">
