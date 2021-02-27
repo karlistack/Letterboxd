@@ -7,8 +7,12 @@
 <img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235202.png" width="50%">
 
 # # No dejes campos vacios
+
 <img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="50%">
 # # Comrpueba los credenciales
+
 <img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210228_001205.png" width="50%">
+
 # # No dejes los valores vacios
+
 <img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="50%">
