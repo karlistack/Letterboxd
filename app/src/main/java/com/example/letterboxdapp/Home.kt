@@ -5,7 +5,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.graphics.Bitmap
-import android.net.wifi.p2p.WifiP2pManager
 import android.os.Bundle
 import android.provider.MediaStore
 import android.webkit.WebView
@@ -17,8 +16,8 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class Home : AppCompatActivity() {
 
-    val CAPTURA = 1
-    val PICK = 2
+    val captura = 1
+    val elige = 2
 
     private val basededatos = FirebaseFirestore.getInstance()
 
@@ -29,9 +28,7 @@ class Home : AppCompatActivity() {
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         val myWebView: WebView = findViewById(R.id.paginaweb)
-        myWebView.loadUrl("https://letterboxd.com/thisisdrew/list/they-shoot-pictures-dont-they-1000-greatest-1/")
-        val myWebView2: WebView = findViewById(R.id.paginaweb2)
-        myWebView.loadUrl("https://letterboxd.com/lists/")
+        myWebView.loadUrl("https://letterboxd.com/director/luis-bunuel/")
 
         val bundle = intent.extras
         val email = bundle?.getString("email")
@@ -88,7 +85,7 @@ class Home : AppCompatActivity() {
         bCamara.setOnClickListener {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             try {
-                startActivityForResult(intent, CAPTURA)
+                startActivityForResult(intent, captura)
             } catch (e: ActivityNotFoundException) {
                 e.message
             }
@@ -99,18 +96,18 @@ class Home : AppCompatActivity() {
                 Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI
             )
-            startActivityForResult(galleryIntent, PICK)
+            startActivityForResult(galleryIntent, elige)
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == CAPTURA && resultCode == RESULT_OK) {
+        if (requestCode == captura && resultCode == RESULT_OK) {
             val imageBitmap = data?.extras?.get("data") as Bitmap
             vIcono.setImageBitmap(imageBitmap)
         }
 
-        if (requestCode == PICK && resultCode == RESULT_OK) {
+        if (requestCode == elige && resultCode == RESULT_OK) {
             vIcono.setImageURI(data?.data)
         }
     }
