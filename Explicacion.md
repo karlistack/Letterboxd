@@ -12,5 +12,5 @@ Inicio de la app
 
 ![Comprueba credenciales](https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210228_001205.png)
 
-<img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="48">
+<img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="50%">
 ![Entrada a la app](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)
