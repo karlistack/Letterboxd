@@ -48,13 +48,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation platform('com.google.firebase:firebase-bom:26.5.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    //FirebaseUI Auth
     implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
     implementation 'com.facebook.android:facebook-login:8.1.0'
     implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
 
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
 
-    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-database-ktx'
     implementation 'com.google.firebase:firebase-storage:19.2.1'
 }

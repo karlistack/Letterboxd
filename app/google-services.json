@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "704629733622",
-    "project_id": "letterboxd-b345e",
-    "storage_bucket": "letterboxd-b345e.appspot.com"
+    "project_number": "512610039586",
+    "project_id": "letterboxd-495f2",
+    "storage_bucket": "letterboxd-495f2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:704629733622:android:ba4e4d2e5331a2977c94d7",
+        "mobilesdk_app_id": "1:512610039586:android:08258af0306949f76f177b",
         "android_client_info": {
           "package_name": "com.example.letterboxdapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "704629733622-1mhf6d1idkrnrg5toilels9mch5jf3ho.apps.googleusercontent.com",
+          "client_id": "512610039586-4ta09up84m620aqji8bm0391ck529v5v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCIL-KUP1LvGl-38g5umAqQ__k_iqImMKQ"
+          "current_key": "AIzaSyAyY75rvcriAR4fc9QMVtO_k7vJqbEUm9U"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "704629733622-1mhf6d1idkrnrg5toilels9mch5jf3ho.apps.googleusercontent.com",
+              "client_id": "512610039586-4ta09up84m620aqji8bm0391ck529v5v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

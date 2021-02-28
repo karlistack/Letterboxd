@@ -68,7 +68,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/tmp/baseline_local_movies_24.xml" />
+                                                <entry key="imagePath" value="/tmp/baseline_self_improvement_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -79,7 +79,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/var/lib/snapd/snap/android-studio/100/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/local_movies/baseline_local_movies_24.xml" />
+                                                <entry key="url" value="file:$USER_HOME$/Android/Sdk/icons/material/materialicons/self_improvement/baseline_self_improvement_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -125,7 +125,6 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="dc1468" />
                                       <entry key="foregroundAssetType" value="CLIP_ART" />
                                     </map>
                                   </option>

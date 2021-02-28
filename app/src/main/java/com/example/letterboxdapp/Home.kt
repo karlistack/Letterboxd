@@ -27,8 +27,8 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-        val myWebView: WebView = findViewById(R.id.paginaweb)
-        myWebView.loadUrl("https://letterboxd.com/director/luis-bunuel/")
+       /* val myWebView: WebView = findViewById(R.id.progreso)
+        myWebView.loadUrl("https://letterboxd.com/director/luis-bunuel/") */
 
         val bundle = intent.extras
         val email = bundle?.getString("email")
@@ -79,7 +79,6 @@ class Home : AppCompatActivity() {
         }
     }
 
-    //------------------------------------para la foto de perfil-------------------------------------------
     private fun userPhoto() {
         bCamara.setOnClickListener {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)

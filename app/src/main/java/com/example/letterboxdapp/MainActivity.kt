@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         goHome()
     }
 
+
     fun goHome() {
         if (authUser.currentUser != null) {
             startActivity(Intent(this, Home::class.java)).apply {
