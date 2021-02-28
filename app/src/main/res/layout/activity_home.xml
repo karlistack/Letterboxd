@@ -24,9 +24,9 @@
             android:layout_height="48dp"
             android:layout_marginTop="13dp"
             android:layout_marginBottom="124dp"
+            android:background="@color/colorAccent"
             android:backgroundTint="@color/colorAccent"
             android:ems="10"
-            android:background="@color/colorAccent"
 
             android:hint="peliculafav"
             android:inputType="textPersonName"
@@ -60,7 +60,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="1dp"
             android:background="@color/colorAccent"
-            android:text="pon tu foto"
+            android:text="@string/galeria"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
             app:layout_constraintEnd_toStartOf="@+id/btInfo"
@@ -76,7 +76,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginEnd="252dp"
             android:background="@color/colorAccent"
-            android:text="Save info "
+            android:text="guarda "
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,7 @@
             android:layout_marginTop="16dp"
             android:background="@color/colorAccent"
             android:ems="10"
-            android:hint="Name"
+            android:hint="nombre"
             android:inputType="textPersonName"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/peliculafavorita"
@@ -136,7 +136,6 @@
             android:layout_marginTop="1dp"
             android:layout_marginEnd="10dp"
             android:background="@color/colorAccent"
-            android:text="Info User"
             app:layout_constraintBottom_toTopOf="@+id/btInfo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.226"
@@ -147,11 +146,27 @@
             android:id="@+id/pelisquehasvisto"
             android:layout_width="410dp"
             android:layout_height="467dp"
+            android:max="100"
+            android:progress="+1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btInfo" />
+
+        <Button
+            android:id="@+id/masuno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="181dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="497dp"
+            android:text="+1 en pelis"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </ScrollView>

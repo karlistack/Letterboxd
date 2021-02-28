@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_marginEnd="2dp"
+            android:layout_height="155dp"
+            motion:layout_constraintEnd_toStartOf="@+id/peliculafavorita"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/tNombre"
+            android:layout_marginBottom="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/fecha"
+            motion:layout_constraintHorizontal_bias="0.086"
+            android:layout_width="161dp"
+            android:layout_marginStart="4dp"
+            android:id="@+id/vIcono" />
+        <Constraint
+            android:layout_height="474dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="412dp"
+            android:id="@+id/progreso"
+            motion:layout_constraintTop_toBottomOf="@+id/bGaleria" />
+        <Constraint
+            android:layout_marginEnd="10dp"
+            android:layout_height="53dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/btInfo"
+            motion:layout_constraintHorizontal_bias="0.937"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="136dp"
+            android:layout_marginStart="10dp"
+            motion:layout_constraintTop_toBottomOf="@+id/vIcono"
+            android:id="@+id/fecha" />
+        <Constraint
+            android:layout_height="448dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.102"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="402dp"
+            motion:layout_constraintTop_toBottomOf="@+id/bGaleria"
+            android:id="@+id/pelis"
+            motion:layout_constraintVertical_bias="1.0"
+            motion:layout_editor_absoluteY="269dp" />
+        <Constraint
+            motion:layout_constraintVertical_bias="1.0"
+            android:layout_height="37dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/fecha"
+            android:layout_marginBottom="2dp"
+            motion:layout_constraintBottom_toTopOf="@+id/bGaleria"
+            android:layout_width="85dp"
+            android:id="@+id/bCamara"
+            motion:layout_constraintEnd_toStartOf="@+id/btshowInfo" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/bGaleria"
+            motion:layout_constraintTop_toBottomOf="@+id/btshowInfo"
+            motion:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@+id/tNombre"
+            android:layout_width="49dp"
+            android:id="@+id/bSalir"
+            motion:layout_constraintStart_toEndOf="@+id/tNombre"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0" />
+        <Constraint
+            android:layout_marginEnd="244dp"
+            android:layout_height="46dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="77dp"
+            android:id="@+id/btInfo"
+            android:layout_marginRight="244dp"
+            motion:layout_constraintTop_toBottomOf="@+id/btshowInfo"
+            android:layout_marginTop="2dp"
+            motion:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
+            motion:layout_constraintStart_toEndOf="@+id/bGaleria" />
+        <Constraint
+            android:layout_height="467dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="410dp"
+            android:id="@+id/pelisquehasvisto"
+            motion:layout_constraintTop_toBottomOf="@+id/bGaleria" />
+        <Constraint
+            android:layout_marginEnd="10dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            motion:layout_constraintHorizontal_bias="0.249"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="78dp"
+            motion:layout_constraintTop_toBottomOf="@+id/vIcono"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/btshowInfo"
+            motion:layout_constraintBottom_toTopOf="@+id/btshowInfo" />
+        <Constraint
+            motion:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
+            android:id="@+id/masuno"
+            motion:layout_editor_absoluteY="62dp"
+            motion:layout_constraintStart_toEndOf="@+id/tNombre"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="178dp"
+            motion:layout_constraintStart_toEndOf="@+id/btshowInfo"
+            android:id="@+id/button3" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

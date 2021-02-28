@@ -19,6 +19,7 @@ class Home : AppCompatActivity() {
     val captura = 1
     val elige = 2
 
+
     private val basededatos = FirebaseFirestore.getInstance()
 
 
@@ -27,12 +28,13 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-       /* val myWebView: WebView = findViewById(R.id.progreso)
+        /* val myWebView: WebView = findViewById(R.id.progreso)
         myWebView.loadUrl("https://letterboxd.com/director/luis-bunuel/") */
 
         val bundle = intent.extras
         val email = bundle?.getString("email")
         val contraseña = bundle?.getString("contraseña")
+        var progreso = 0
         logout()
 
         val prefs =
@@ -49,7 +51,7 @@ class Home : AppCompatActivity() {
             basededatos.collection("users").document(email.toString()).set(
                 hashMapOf(
                     "nombre" to tNombre.text.toString(),
-                     "peliculafavorita" to peliculafavorita.text.toString()
+                    "peliculafavorita" to peliculafavorita.text.toString()
                 )
             )
         }
@@ -57,58 +59,63 @@ class Home : AppCompatActivity() {
         btshowInfo.setOnClickListener {
             basededatos.collection("users").document(email.toString()).get().addOnSuccessListener {
                 tNombre.setText(it.get("nombre") as String?)
-                peliculafavorita.setText(it.get("pelicula favorita")as String?)
+                peliculafavorita.setText(it.get("pelicula favorita") as String?)
 
             }
         }
 
     }
 
-    private fun logout() {
 
-        bSalir.setOnClickListener {
 
-            val prefs =
-                getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+        private fun logout() {
 
-            prefs.clear()
-            prefs.apply()
-            FirebaseAuth.getInstance().signOut()
-            onBackPressed()
+            bSalir.setOnClickListener {
 
-        }
-    }
+                val prefs =
+                    getSharedPreferences(
+                        getString(R.string.prefs_file),
+                        Context.MODE_PRIVATE
+                    ).edit()
 
-    private fun userPhoto() {
-        bCamara.setOnClickListener {
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            try {
-                startActivityForResult(intent, captura)
-            } catch (e: ActivityNotFoundException) {
-                e.message
+                prefs.clear()
+                prefs.apply()
+                FirebaseAuth.getInstance().signOut()
+                onBackPressed()
+
             }
         }
 
-        bGaleria.setOnClickListener {
-            val galleryIntent = Intent(
-                Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI
-            )
-            startActivityForResult(galleryIntent, elige)
+        private fun userPhoto() {
+            bCamara.setOnClickListener {
+                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                try {
+                    startActivityForResult(intent, captura)
+                } catch (e: ActivityNotFoundException) {
+                    e.message
+                }
+            }
+
+            bGaleria.setOnClickListener {
+                val galleryIntent = Intent(
+                    Intent.ACTION_PICK,
+                    android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI
+                )
+                startActivityForResult(galleryIntent, elige)
+            }
         }
+
+        override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+            super.onActivityResult(requestCode, resultCode, data)
+            if (requestCode == captura && resultCode == RESULT_OK) {
+                val imageBitmap = data?.extras?.get("data") as Bitmap
+                vIcono.setImageBitmap(imageBitmap)
+            }
+
+            if (requestCode == elige && resultCode == RESULT_OK) {
+                vIcono.setImageURI(data?.data)
+            }
+        }
+
+
     }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == captura && resultCode == RESULT_OK) {
-            val imageBitmap = data?.extras?.get("data") as Bitmap
-            vIcono.setImageBitmap(imageBitmap)
-        }
-
-        if (requestCode == elige && resultCode == RESULT_OK) {
-            vIcono.setImageURI(data?.data)
-        }
-    }
-
-
-}
