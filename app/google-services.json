@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:704629733622:android:ba4e4d2e5331a2977c94d7",
         "android_client_info": {
-          "package_name": "com.company.Letterboxd"
+          "package_name": "com.example.letterboxdapp"
         }
       },
       "oauth_client": [

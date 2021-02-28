@@ -38,11 +38,16 @@ class Ingresar : AppCompatActivity() {
                         if (it.isSuccessful) {
                             session()
                             startActivity(Intent(this, Home::class.java))
+                            Toast.makeText(
+                                applicationContext,
+                                "se creo su usuario",
+                                Toast.LENGTH_SHORT
+                            ).show()
                             finish()
                         } else {
                             Toast.makeText(
                                 applicationContext,
-                                "añada numeros",
+                                "error en el registro",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
@@ -67,7 +72,7 @@ class Ingresar : AppCompatActivity() {
                         } else {
                             Toast.makeText(
                                 applicationContext,
-                                "Incorrecto",
+                                "prueba otra vez",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
@@ -83,8 +88,8 @@ class Ingresar : AppCompatActivity() {
         val prefs: SharedPreferences =
             getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
         val email = prefs.getString("email", null)
-        val password = prefs.getString("password", null)
-        if (email != null && password != null) {
+        val contraseña = prefs.getString("contraseña", null)
+        if (email != null && contraseña != null) {
             startActivity(Intent(this, Home::class.java))
             finish()
 

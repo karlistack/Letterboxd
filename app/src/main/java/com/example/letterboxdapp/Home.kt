@@ -49,14 +49,14 @@ class Home : AppCompatActivity() {
             basededatos.collection("users").document(email.toString()).set(
                 hashMapOf(
                     "nombre" to tNombre.text.toString(),
-                     "pelicula favorita" to peliculafavorita.text.toString()
+                     "peliculafavorita" to peliculafavorita.text.toString()
                 )
             )
         }
 
         btshowInfo.setOnClickListener {
             basededatos.collection("users").document(email.toString()).get().addOnSuccessListener {
-                tNombre.setText(it.get("name") as String?)
+                tNombre.setText(it.get("nombre") as String?)
                 peliculafavorita.setText(it.get("pelicula favorita")as String?)
 
             }
@@ -64,7 +64,6 @@ class Home : AppCompatActivity() {
 
     }
 
-    //------------------------------------LogOut-------------------------------------------
     private fun logout() {
 
         bSalir.setOnClickListener {
