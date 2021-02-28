@@ -1,3 +1,5 @@
+# Letterboxd app 
+<img src="https://github.com/karlistack/Letterboxd/blob/master/2021-02-28-230021_1366x768_scrot.png" width="50%">
 
 # # Uso de Firebase 
 <img src="https://github.com/karlistack/Letterboxd/blob/master/2021-02-28-000821_1366x768_scrot.png" width="50%">
@@ -19,3 +21,6 @@
 # # No dejes los valores vacios
 
 <img src="https://github.com/karlistack/Letterboxd/blob/master/Screenshot_20210227_235405.png" width="50%">
+# # dentro de la App
+<img src="https://github.com/karlistack/Letterboxd/blob/master/2021-02-28-230021_1366x768_scrot.png" width="50%">
+
