@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:id="@+id/bGaleria"
             motion:layout_constraintTop_toBottomOf="@+id/btshowInfo"
-            motion:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
+            motion:layout_constraintBottom_toTopOf="@+id/web"
             motion:layout_constraintVertical_bias="0.0"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
@@ -93,7 +93,7 @@
             android:layout_marginRight="244dp"
             motion:layout_constraintTop_toBottomOf="@+id/btshowInfo"
             android:layout_marginTop="2dp"
-            motion:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
+            motion:layout_constraintBottom_toTopOf="@+id/web"
             motion:layout_constraintStart_toEndOf="@+id/bGaleria" />
         <Constraint
             android:layout_height="467dp"
@@ -102,7 +102,7 @@
             motion:layout_constraintHorizontal_bias="1.0"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="410dp"
-            android:id="@+id/pelisquehasvisto"
+            android:id="@+id/web"
             motion:layout_constraintTop_toBottomOf="@+id/bGaleria" />
         <Constraint
             android:layout_marginEnd="10dp"
@@ -117,7 +117,7 @@
             android:id="@+id/btshowInfo"
             motion:layout_constraintBottom_toTopOf="@+id/btshowInfo" />
         <Constraint
-            motion:layout_constraintBottom_toTopOf="@+id/pelisquehasvisto"
+            motion:layout_constraintBottom_toTopOf="@+id/web"
             android:id="@+id/masuno"
             motion:layout_editor_absoluteY="62dp"
             motion:layout_constraintStart_toEndOf="@+id/tNombre"

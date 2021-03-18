@@ -18,13 +18,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28ac00d-18a4-4034-95f0-37d3273e700b" name="Default Changelist" comment="va2" />
+    <list default="true" id="b28ac00d-18a4-4034-95f0-37d3273e700b" name="Default Changelist" comment="va2">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Letterboxd.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Letterboxd.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/letterboxdapp/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/letterboxdapp/Home.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/letterboxdapp/Ingresar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/letterboxdapp/Ingresar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/activity_home_xml_constraintlayout_scene.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/activity_home_xml_constraintlayout_scene.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30]" />
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
@@ -253,10 +264,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="265" y="47" width="826" height="577" key="AndroidThemeDialog/0.0.1366.768@0.0.1366.768" timestamp="1614548614824" />
-    <state x="-6" y="-132" width="1366" height="768" key="FileChooserDialogImpl" timestamp="1614544597487">
+    <state x="-7" y="-154" width="1366" height="768" key="FileChooserDialogImpl" timestamp="1616078516464">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="-6" y="-132" width="1366" height="768" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1614544597487" />
+    <state x="-7" y="-154" width="1366" height="768" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1616078516464" />
     <state x="542" y="239" key="Github.ShareDialog" timestamp="1614459075197">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

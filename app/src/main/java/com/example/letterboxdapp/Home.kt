@@ -28,13 +28,12 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-        /* val myWebView: WebView = findViewById(R.id.progreso)
-        myWebView.loadUrl("https://letterboxd.com/director/luis-bunuel/") */
+         val myWebView: WebView = findViewById(R.id.web)
+        myWebView.loadUrl("https://letterboxd.com/director/luis-bunuel/")
 
         val bundle = intent.extras
         val email = bundle?.getString("email")
         val contraseña = bundle?.getString("contraseña")
-        var progreso = 0
         logout()
 
         val prefs =
@@ -51,7 +50,7 @@ class Home : AppCompatActivity() {
             basededatos.collection("users").document(email.toString()).set(
                 hashMapOf(
                     "nombre" to tNombre.text.toString(),
-                    "peliculafavorita" to peliculafavorita.text.toString()
+                    "pelicula favorita" to peliculafavorita.text.toString()
                 )
             )
         }
@@ -80,8 +79,9 @@ class Home : AppCompatActivity() {
 
                 prefs.clear()
                 prefs.apply()
-                FirebaseAuth.getInstance().signOut()
                 onBackPressed()
+
+                FirebaseAuth.getInstance().signOut()
 
             }
         }
@@ -99,7 +99,7 @@ class Home : AppCompatActivity() {
             bGaleria.setOnClickListener {
                 val galleryIntent = Intent(
                     Intent.ACTION_PICK,
-                    android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI
+                    MediaStore.Images.Media.INTERNAL_CONTENT_URI
                 )
                 startActivityForResult(galleryIntent, elige)
             }

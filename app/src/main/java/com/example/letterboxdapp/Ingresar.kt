@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.firebase.ui.auth.AuthUI
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -21,7 +22,9 @@ class Ingresar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-
+        val analyics: FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        val bundle=Bundle()
+        analyics.logEvent("inicio", bundle)
         googleLogin()
         facebookLogin()
         register()
@@ -33,16 +36,10 @@ class Ingresar : AppCompatActivity() {
         bRegistrar.setOnClickListener {
             if (temail.text.isNotEmpty() && tcoñtraseña.text.isNotEmpty()) {
                 FirebaseAuth.getInstance()
-                    .createUserWithEmailAndPassword(temail.text.toString(), tcoñtraseña.text.toString())
-                    .addOnCompleteListener {
+                    .createUserWithEmailAndPassword(temail.text.toString(), tcoñtraseña.text.toString()).addOnCompleteListener {
                         if (it.isSuccessful) {
                             session()
                             startActivity(Intent(this, Home::class.java))
-                            Toast.makeText(
-                                applicationContext,
-                                "se creo su usuario",
-                                Toast.LENGTH_SHORT
-                            ).show()
                             finish()
                         } else {
                             Toast.makeText(
@@ -63,8 +60,7 @@ class Ingresar : AppCompatActivity() {
         bIngresar.setOnClickListener {
             if (temail.text.isNotEmpty() && tcoñtraseña.text.isNotEmpty()) {
                 FirebaseAuth.getInstance()
-                    .signInWithEmailAndPassword(temail.text.toString(), tcoñtraseña.text.toString())
-                    .addOnCompleteListener {
+                    .signInWithEmailAndPassword(temail.text.toString(), tcoñtraseña.text.toString()).addOnCompleteListener {
                         if (it.isSuccessful) {
                             session()
                             startActivity(Intent(this, Home::class.java))
